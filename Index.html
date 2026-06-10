@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanju Royal Travels</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#0d47a1;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+    z-index:1000;
+}
+
+nav h2{
+    font-size:24px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("IMG-20260531-WA0036.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content img{
+    height:80px;
+    margin-bottom:20px;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    margin:10px;
+    border-radius:8px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.call{
+    background:#ff9800;
+}
+
+.services{
+    padding:60px 20px;
+    text-align:center;
+    background:#f5f5f5;
+}
+
+.services h2{
+    margin-bottom:30px;
+}
+
+.service-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.service-box{
+    background:white;
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.choose{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.choose-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.choose-box{
+    width:220px;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact{
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:24px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:10px;
+}
+
+.hero-content h1{
+    font-size:35px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Sanju Royal Travels</h2>
+
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<img src="logo.jpg" alt="Sanju Royal Travels Logo" style="height:120px; width:auto; margin-bottom:20px;">
+
+<h1>Sanju Royal Travels</h1>
+
+<p>Your Journey, Our Priority</p>
+
+<p>
+Airport Pickup • Outstation Trips • Tour Packages
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/919686312056?text=Hello,%20I%20would%20like%20to%20book%20a%20trip.">
+WhatsApp Booking
+</a>
+
+<a class="btn call"
+href="tel:9686312056">
+Call Now
+</a>
+
+</div>
+
+</section>
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-container">
+
+<div class="service-box">
+<h3>Airport Pickup & Drop</h3>
+<p>On-time and reliable airport transfer services.</p>
+</div>
+
+<div class="service-box">
+<h3>Outstation Trips</h3>
+<p>Comfortable travel across Karnataka and South India.</p>
+</div>
+
+<div class="service-box">
+<h3>Tour Packages</h3>
+<p>Mysore, Ooty, Coorg and many more destinations.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="choose">
+
+<h2>Why Choose Us?</h2>
+
+<div class="choose-container">
+
+<div class="choose-box">
+<h3>Clean Vehicles</h3>
+<p>Well-maintained cars.</p>
+</div>
+
+<div class="choose-box">
+<h3>On-Time Service</h3>
+<p>Punctual and reliable.</p>
+</div>
+
+<div class="choose-box">
+<h3>Experienced Drivers</h3>
+<p>Professional drivers.</p>
+</div>
+
+<div class="choose-box">
+<h3>24/7 Support</h3>
+<p>Always available.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📞 9686312056</p>
+
+<p>📧 sanjuroyaltravels@gmail.com</p>
+
+<p>📍 Karnataka, India</p>
+
+</section>
+
+<footer>
+<p>© 2026 Sanju Royal Travels. All Rights Reserved.</p>
+</footer>
+
+<a class="floating-whatsapp"
+href="https://wa.me/919686312056?text=Hello,%20I%20would%20like%20to%20book%20a%20trip.">
+💬
+</a>
+
+</body>
+</html>
